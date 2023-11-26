@@ -1,0 +1,631 @@
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar{
+      width: 10px;
+  }
+  
+  
+  ::-webkit-scrollbar-thumb{
+      background-color: gainsboro;
+     background-clip: content-box;
+     border: 3px solid transparent;
+      border-radius: 5px;
+      cursor: grab;
+  }
+
+
+/* body start */
+
+body{
+      background-color: white;
+}
+
+.body-js{
+      background-color: black;
+}
+
+.body-js header{
+      background-color: black;
+}
+
+.body-js h1,p,h2{
+      color: white;
+}
+
+.body-js input{
+      background-color: rgb(36, 36, 36);
+      border: 1px solid rgb(79, 79, 79);
+}
+
+.body-js button{
+      background-color: rgb(36, 36, 36);
+     border-left:1px solid rgb(105, 105, 105) ;
+}
+
+
+
+
+
+
+/* header start */
+
+header{
+      position: sticky;
+      position: fixed;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 15px;
+      border-bottom: 1px solid gainsboro;
+      z-index: 1000;background-color: white;
+}
+.header-left{
+      background-image: url(img/tiktok\ white\ mode\ logo.png);
+      height: 30px;
+      width: 100px;
+      background-position: center;
+      background-size: cover;
+}
+.header-left-js{
+      background-image: url(img/tiktok\ logo.PNG);
+      height: 30px;
+      width: 100px;
+      background-position: center;
+      background-size: cover;
+}
+
+.logo{
+      font-size: 25px;
+      font-weight: 600;
+     
+}
+.logo::first-letter{
+      color:#ff004c
+}
+
+.logoG{
+      color: #ff004c;
+}
+.search-profile-input{
+      outline: none;
+      width: 500px;
+      height: 45px;
+      border-radius: 100px;
+      padding:  20px;
+      font-size: 18px;
+      font-weight: 500;
+      caret-color: red;
+      color: rgb(43, 43, 43);
+      border: none;
+      background-color: rgb(241, 241, 241);
+      margin-left: 30px;
+     
+     
+}
+
+
+
+.input-search-field{
+      position: relative;
+      overflow: hidden;
+}
+
+.input-search-field-js{
+      border: 1px solid gainsboro;
+}
+
+.input-search-button{
+      position: absolute;
+      right: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 43px;
+      width: 50px;
+      border-radius: 0 30px 30px 0;
+    
+      border: none;
+      border-left: 1px solid gainsboro;
+      cursor: pointer;
+      
+}
+
+
+
+.input-search-button-js{
+      background-color: rgb(214, 214, 214);
+     
+}
+
+.fa-magnifying-glass{
+      font-size: 15px;
+}
+.header-right{
+      display: flex;
+      align-items: center;
+}
+
+.upload-video{
+
+      padding: 8px 18px;
+     
+      border: 1px solid rgb(239, 239, 239);
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+      margin-right: 25px;
+      background-color: white;
+      color: rgb(0, 0, 0);
+
+}
+.upload-video-js{
+      background-color: rgb(36, 36, 36);
+      border: 1px solid rgb(79, 79, 79);
+      color: rgb(255, 255, 255);
+}
+
+
+
+
+.fa-plus{
+      margin-right: 10px;
+      font-size: 25px;
+      vertical-align: middle;
+      
+}
+.upload-video-js.fa-plus{
+      color: white;
+ }
+ 
+
+.fa-message{
+      margin-right: 25px;
+      font-size: 20px;
+      cursor: pointer;
+}
+
+.fa-paper-plane{
+      margin-right: 25px;
+      font-size: 20px;
+      cursor: pointer;
+}
+
+
+.profile-image{
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      border-radius: 50%;
+      vertical-align: middle;
+     
+}
+
+
+
+/* header end */
+
+
+
+/* main start */
+
+
+.main{
+      height: 100vh;
+     display: flex;
+     padding: 0 0px 0 0;
+     
+}
+
+.main-left{
+      position: fixed;
+      top: 50px;
+
+      height: 100%;
+      width: 250px;
+      /* border-right: 1px solid gainsboro; */
+      /* position: absolute; */
+      padding: 20px 15px;
+      display: flex;
+      flex-direction: column;
+      cursor:grab;
+      
+
+      
+}
+
+.main-left::-webkit-scrollbar{
+      width: 11px;
+  }
+  
+  
+ .main-left ::-webkit-scrollbar-thumb{
+      background-color: gainsboro;
+     background-clip: content-box;
+     border: 3px solid transparent;
+      border-radius: 5px;
+      cursor: pointer;
+
+  }
+
+.main-left-first-div{
+      border-bottom: 1px solid gainsboro;
+      padding-bottom: 40px;
+}
+.fa-classes{
+      width: 35px;
+      height: 20px;
+      display: inline-block;
+}
+.fa-house,.fa{
+      font-size: 20px;
+}
+
+.for-you{
+      color: #ff004c;
+      font-size: 18px;
+      display: inline-block;
+      font-weight: 600;
+      /* margin-left: 10px; */
+     
+}
+
+.following{
+      font-size: 18px;
+      display: inline-block;
+      font-weight: 600;
+      /* margin-left: 10px; */
+
+}
+
+.heading-main-left{
+      margin-top: 20px;
+}
+
+.explore{
+      width: 20px;
+      vertical-align: middle;
+}
+
+
+/* main left second div start */
+
+
+.main-left-second-div{
+      padding: 30px 0;
+      padding-bottom: 40px;
+      border-bottom: 1px solid gainsboro;
+      
+     
+
+     
+     
+
+}
+
+.user-following{
+      font-size: 15px;
+      color: rgb(92, 92, 92);
+      font-weight: 500;
+      margin-bottom: 30px;
+}
+
+
+
+.main-left-second-div-following-profile{
+      margin-bottom: 20px;
+      display: flex;
+}
+.following-image{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 15px;
+}
+
+
+.name{
+      font-size: 15px;
+      color: rgb(0, 0, 0);
+
+}
+
+.user-name{
+      font-size: 12px;
+      color: rgb(92, 92, 92);
+      font-weight: 400;
+}
+
+
+.see-more-following-account{
+      color: #ff004c;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+}
+
+
+
+.effects{
+      width: 100%;
+      height: 60px;
+      font-size: 20px;
+      background: linear-gradient(45deg, rgb(153, 241, 255),rgb(164, 233, 248),rgb(190, 255, 190),rgb(255, 136, 255),rgb(255, 177, 255));
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+}
+
+.effect-main-left-third-div{
+      margin-top: 30px;
+}
+
+.copyright{
+      padding: 40px 0;
+}
+
+
+.copryright-tiktok{
+      color: rgb(92, 92, 92);
+      font-size: 13px;
+      font-weight: 400;
+}
+
+
+.center-div{
+     height: 100%;
+     width: 400px;
+     margin: auto;
+     
+      padding: 100px 0 0px 0;
+      
+     
+      
+}
+
+.content-video{
+     width: 300px;
+     height: 500px;
+     border-radius: 20px;
+     object-fit: cover;
+    
+    
+}
+/* .center-content-container{
+      position: relative;
+} */
+.center-content-upper-left{
+      display: inline-block;
+     
+     
+}
+
+.center-content-upper-right{
+      display: inline-block;
+     
+}
+
+.center-left-img{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      
+    
+
+}
+
+.user-name-for-content{
+      font-size: 16px;
+      display: inline-block;
+      font-weight: 500;
+     
+     
+}
+
+.para-for-bio{
+      font-size: 13px;
+      width: 250px;
+      color: rgb(68, 68, 68);
+      margin-top: 5px;
+     
+}
+
+
+
+
+
+.profile-menu{
+      height: 0px;
+      width: 250px;
+      background-color: rgb(255, 255, 255);
+      position: absolute;
+      right: 10px;
+      top: 60px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 16px 0px rgb(183, 183, 183);
+      padding: 20px 10px;
+      opacity: 0;
+      transition:  .5s;
+      
+      
+}
+
+.profile-menu-js{
+      background-color: black;
+}
+
+.profile-menu-height{
+      height: 230px;
+      opacity: 1;
+}
+
+.profile-menu-item{
+      display: flex;
+     
+      
+
+}
+
+
+.profile-menu-item-heading{
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+}
+.dark-mood{
+      display: flex;
+      position: relative;
+      width: 100%;
+
+     
+}
+
+.fa-user,.fa-bookmark,.fa-gear,.fa-language,.fa-moon{
+      font-size: 17px;
+      margin-right: 10px;
+      color: rgb(0, 0, 0);
+     
+}
+.fa-me{
+     color: rgb(94, 8, 8);
+}
+
+
+
+
+
+.toggle-bar{
+      position: absolute;
+      right: 10px;
+      top: -2px;
+      /* top: 50%;
+      transform: translateY(-50%); */
+}
+
+
+.toggled{
+      width: 45px;
+      background-color: rgb(235, 235, 235);
+      height: 25px;
+      border-radius: 30px;
+      position: relative;
+     
+}
+
+
+.indicator{
+      position: absolute;
+      height:18px;
+      width: 18px;
+      background-color: white;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      left: 3px;
+      transition: .7s;
+      cursor: pointer;
+     
+     
+}
+
+.indicator-js{
+      left:24px ;
+      background-color: rgb(13, 162, 58);
+     
+}
+
+
+
+
+.body-js.name,.user-name{
+      color: rgb(255, 253, 253);
+}
+
+.body-js,.center-content-video{
+      background-color: rgb(0, 0, 0);
+}
+
+.center-content-video{
+      width: 0;
+      background-color: black;
+}
+
+
+.tiktok-embed{
+     background-color: black;
+}
+
+
+.body-js header{
+      border: 1px solid rgb(105, 105, 105);
+}
+
+.icon1-js{
+      color: rgb(255, 255, 255);
+}
+.icon2-js{
+      color: rgb(255, 255, 255);
+}
+.icon3-js{
+      color: rgb(255, 255, 255);
+}
+.icon4-js{
+      color: rgb(255, 255, 255);
+}
+.icon5-js{
+      color: rgb(255, 255, 255);
+}
+.icon6{
+      color: rgb(0, 0, 0)
+}
+.icon7{
+      color: rgb(0, 0, 0)
+}
+.icon8{
+      color: rgb(0, 0, 0)
+}
+.icon6-js{
+      color: rgb(255, 255, 255)
+}
+.icon7-js{
+      color: rgb(255, 255, 255)
+}
+.icon8-js{
+      color: rgb(255, 255, 255)
+}
+.icon9{
+      color: rgb(0, 0, 0)
+}
+.icon9-js{
+      color: rgb(255, 255, 255)
+}
+.icon10{
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      vertical-align: middle;
+}
+.icon10-js{
+      color: rgb(255, 255, 255);
+     
+}
+
+
+.body-js p{
+      color: rgb(81, 81, 81);
+}
+
+.user-name2{
+      color: rgb(16, 16, 16);
+      font-size: 11px;
+      font-weight: 500;
+}
+
+.body-js,.user-name2{
+      color: white;
+}
+
